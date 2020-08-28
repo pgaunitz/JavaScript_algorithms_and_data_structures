@@ -9,5 +9,6 @@ const addUpTo = (n) => {
   return total;
 };
 // 5n+2 operations
+// O(n)
 
 console.log(addUpTo(1000000));
