@@ -8,7 +8,7 @@
 
 #### Exampels
 5n+2 operations => O(n)
-```
+```javascript
 const addUpTo = (n) => {
   // 1 assaignment
   let total = 0;
@@ -21,7 +21,7 @@ const addUpTo = (n) => {
 };
 ```  
 O(n)  
-```
+```javascript
 function min5Times(n) {
   for (let i =1; i <= Math.max(5, n); i++) {
     console.log(i)
@@ -29,13 +29,13 @@ function min5Times(n) {
 }
 ```  
 3 simple operations, 1 multiplication, 1 addition, 1 division => O(3) => O(1)  
-```
+```javascript
 const addUpTo = (n) => {
   return (n * (n + 1)) / 2;
 };
 ```
 O(1)  
-```
+```javascript
 function max5Times(n) {
   for (let i =1; i <= Math.min(5, n); i++) {
     console.log(i)
@@ -43,7 +43,7 @@ function max5Times(n) {
 }
 ```
 O(n²)
-```
+```javascript
 const printPairs = (n) => {
   for (let i = 0; i < n; i++)
     for (let j = 0; j < n; j++) {
@@ -52,7 +52,7 @@ const printPairs = (n) => {
 };
 ```
 O(n³)
-```
+```javascript
 const printPairs2 = (n) => {
   for (let i = 0; i < n; i++)
     for (let j = 0; j < n; j++) {
@@ -79,7 +79,7 @@ O(n²+10n+10) => O(n²)
 ## Space complexety
 
 O(1) space
-```
+```javascript
 function sum(arr) {
   let total = 0
   for (let i =1; i <= arr.length; i++) {
@@ -90,7 +90,7 @@ function sum(arr) {
 // two numbers, total and i
 ```
 O(n) space
-```
+```javascript
 function sum(arr) {
   let newArr = 0
   for (let i =1; i <= arr.length; i++) {
