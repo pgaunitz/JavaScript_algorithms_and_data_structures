@@ -56,7 +56,7 @@ const same = (arr1, arr2) => {
 Given to strings, write a function to determind if the second string is an anagram of the first.
 
 ```javascript
-validAnagram("anagram", "nagram"); //true
+validAnagram("anagram", "nagaram"); //true
 validAnagram("rat", "car"); //false
 
 validAnagram(str1, str2);
@@ -65,7 +65,7 @@ validAnagram(str1, str2);
 //create two objects
 // loop through strings and count the frequenzy of each char and save in to obj
 // compare the two obj
-//return if check fails
+//return false if check fails
 //else return true
 
 const validAnagram = (stri1, stri2) => {
@@ -90,4 +90,24 @@ const validAnagram = (stri1, stri2) => {
   }
   return true;
 };
+
+//another solution, using charCodeAt method
+const validAnagram = (str1, str2) => {
+  let str1Sum = 0;
+  let str2Sum = 0;
+  if (str1.length !== str2.length) {
+    return false;
+  }
+  for (let i = 0; i < str1.length; i++) {
+    str1Sum += str1.charCodeAt(i);
+    str2Sum += str2.charCodeAt(i);
+  }
+  if (str1Sum !== str2Sum) {
+    return false;
+  }
+
+  return true;
+};
 ```
+
+
