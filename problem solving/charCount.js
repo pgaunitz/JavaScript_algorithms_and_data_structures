@@ -1,8 +1,7 @@
 const charCount = (str) => {
   let result = {};
   for (let char of str) {
-    
-    if (char.toLowerCase() != char.toUpperCase() || /[0-9]/.test(char) ) {
+    if (char.toLowerCase() != char.toUpperCase() || /[0-9]/.test(char)) {
       char = char.toLowerCase();
       result[char] = ++result[char] || 1;
     }
