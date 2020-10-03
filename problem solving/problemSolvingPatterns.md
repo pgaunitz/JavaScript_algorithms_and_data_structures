@@ -1,6 +1,6 @@
 # Problem Solving Patterns
 
-### Frequency Counter Pattern
+## Frequency Counter Pattern
 
 Write a function that accepts two arrays.  
 The function sould return true if every value in the array has it's correspondig value squared in the second array. The frequency of values must be the same.
@@ -56,8 +56,8 @@ const same = (arr1, arr2) => {
 Given to strings, write a function to determind if the second string is an anagram of the first.
 
 ```javascript
-validAnagram("anagram", "nagaram"); //true
-validAnagram("rat", "car"); //false
+validAnagram('anagram', 'nagaram'); //true
+validAnagram('rat', 'car'); //false
 
 validAnagram(str1, str2);
 // check if the strings have the same length

@@ -1,6 +1,6 @@
-## Strategies
+# Strategies
 
-### Understand the problem
+## Understand the problem
 
 1. Can I restate the problem in my own words?
 2. What are the inputs that go into the problem?
